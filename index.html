@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Modern Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">🌸 Gallery 🌸</div>
+    <nav>
+      <button class="nav-btn active" data-category="all">🏠 Home</button>
+      <button class="nav-btn" data-category="nature">🌿 Nature</button>
+      <button class="nav-btn" data-category="city">🏙️ City</button>
+      <button class="nav-btn" data-category="animals">🐾 Animals</button>
+    </nav>
+  </aside>
+
+  <!-- Toggle Button (mobile) -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <!-- Main Content -->
+  <main>
+    <header id="home">
+      <h1 class="logo">🌟 Ultra Modern Gallery 🌟</h1>
+      <p>Dive into Nature, City Vibes & Animal World</p>
+    </header>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/id/1018/600/800" alt="Forest">
+        <div class="overlay"><span>Forest</span></div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/id/1015/600/800" alt="Mountains">
+        <div class="overlay"><span>Mountains</span></div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://picsum.photos/id/1003/600/800" alt="River">
+        <div class="overlay"><span>River</span></div>
+      </div>
+
+      <!-- City -->
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/id/1011/600/800" alt="City Skyline">
+        <div class="overlay"><span>Skyline</span></div>
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/id/1012/600/800" alt="Street Lights">
+        <div class="overlay"><span>Street</span></div>
+      </div>
+      <div class="gallery-item" data-category="city">
+        <img src="https://picsum.photos/id/1006/600/800" alt="Architecture">
+        <div class="overlay"><span>Architecture</span></div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://picsum.photos/id/1025/600/800" alt="Puppy">
+        <div class="overlay"><span>Puppy</span></div>
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://picsum.photos/id/237/600/800" alt="Dog">
+        <div class="overlay"><span>Dog</span></div>
+      </div>
+      <div class="gallery-item" data-category="animals">
+        <img src="https://picsum.photos/id/1074/600/800" alt="Horse">
+        <div class="overlay"><span>Horse</span></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="caption"></div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
